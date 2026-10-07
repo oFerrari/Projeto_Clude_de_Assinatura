@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@config "../../tailwind.config.mjs";
+
+/* Keep the Tailwind 3 default border color for existing components. */
+@layer base {
+  *, ::before, ::after, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
